@@ -83,7 +83,7 @@ function App() {
       ):
       (
         <div className='flex items-center justify-center h-[85vh]'>
-        <h1 className='text-amber-950 md:text-6xl text-2xl text-center pixel'> Enter a pokemon's name. </h1>
+        <p className='text-amber-950 md:text-6xl text-2xl text-center pixel'> Enter a pokemon's name. </p>
       </div>
       )
       }
