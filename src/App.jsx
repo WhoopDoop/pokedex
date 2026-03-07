@@ -48,7 +48,7 @@ function App() {
   },[pokemon]);
 
   return (
-    <div className="min-h-screen w-full md:w-screen flex flex-col">
+    <div className="min-h-screen w-screen flex flex-col">
       <div className="flex md:items-center bg-[#ffdcdc] h-[15vh] border-8 border-black md:p-5 w-full justify-between">
         <div className="flex items-center">
           <img
