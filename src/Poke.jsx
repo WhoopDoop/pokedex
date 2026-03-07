@@ -38,7 +38,7 @@
                     <div className='text-amber-950 text-2xl pixel md:text-4xl m-4 flex flex-col'>
                         <p> NAME - {capitalize(poke.name)} </p> 
                     </div>
-                    <div className='text-gray-950 pixel text-xl md:text-2xl m-4 flex gap-6 md:gap-30'>
+                    <div className='text-gray-950 pixel text-xl md:text-2xl m-4 flex gap-6 md:gap-100'>
                         <p> Height - {poke.height} </p>
                         <p> Weight - {poke.weight} </p>
                     </div>
@@ -50,7 +50,7 @@
                             </p>
                         ))}
                     </div>
-                    <div className="flex justify-center items-center">
+                    <div className="flex flex-col md:flex-row items-center">
                         <div className="w-md max-w-md bg-green-200">
                             {poke.stats.map((stat) => (
                                 <div className="m-2 bg-green-100">
@@ -72,11 +72,11 @@
                         <p> SOUND: </p>
 
                     <button
-                     className="h-20 text-white pixel"
+                     className="h-20 text-white pixel bg-black"
                      onClick={playCry}
                      >CLICK </button>
                     </div>
-                </div>
+                    </div>
                 </div>
             </div>
         )

@@ -56,10 +56,10 @@ function App() {
           width={80}
           className="md:w-25"
           />
-          <p className="font-bold text-black flex text-3xl md:text-6xl pixel p-8"> POKEDEX </p>
+          <p className="font-bold text-black flex text-2xl md:text-6xl pixel"> POKEDEX </p>
         </div>
         <div className="flex items-center">
-          <input value={input} onChange={(e) => setInput(e.target.value)} type="text" className="pixel text-black border-black border-3 h-10 w-[17rem] md:w-[20rem] placeholder:text-gray-800 pl-4 placeholder:pixel" placeholder="ENTER A POKEMON"/>
+          <input value={input} onChange={(e) => setInput(e.target.value)} type="text" className="pixel text-black border-black border-3 h-10 w-[9rem] md:w-[20rem] placeholder:text-gray-800 pl-4 placeholder:pixel" placeholder="ENTER A POKEMON"/>
           <img
           className="md:pl-3"
           src={Search}
