@@ -53,8 +53,7 @@ function App() {
         <div className="flex items-center">
           <img
           src={PokeBall}
-          width={80}
-          className="md:w-25"
+          className="md:w-25 w-20"
           />
           <p className="font-bold text-black flex text-2xl md:text-6xl pixel"> POKEDEX </p>
         </div>
