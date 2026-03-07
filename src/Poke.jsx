@@ -26,23 +26,23 @@
         ? poke.sprites.back_default
         : poke.sprites.front_default;
         return (
-            <div className="flex">
-                <div className="flex flex-col items-center">
+            <div className="flex flex-col md:flex-row">
+                <div className="flex flex-col items-center p-4git">
                     <img
                     src={sprite}
-                    className='w-80 h-80 border-black border-6 m-4' 
+                    className='w-52 h-52 md:w-80 md:h-80 border-black border-6 m-4' 
                     />
                     <img src={Rotate} width="100" onClick={() => setTurned(prev => !prev)}></img>
                 </div>
                 <div className="flex flex-col bg-amber-50 p-2 rounded-lg">
-                    <div className='text-amber-950  pixel text-4xl m-4 flex flex-col'>
+                    <div className='text-amber-950 text-2xl pixel md:text-4xl m-4 flex flex-col'>
                         <p> NAME - {capitalize(poke.name)} </p> 
                     </div>
-                    <div className='text-gray-950 pixel text-2xl m-4 flex gap-30'>
+                    <div className='text-gray-950 pixel text-xl md:text-2xl m-4 flex gap-30'>
                         <p> Height - {poke.height} </p>
                         <p> Weight - {poke.weight} </p>
                     </div>
-                    <div className="flex gap-10 text-gray-950 pixel text-2xl m-4">
+                    <div className="flex gap-10 text-gray-950 pixel text-xl md:text-2xl m-4">
                         <p className="text-amber-950"> TYPE: </p>
                         {poke.types.map((t) => (
                             <p key={t.slot}>
@@ -68,7 +68,7 @@
                                 </div> 
                             ))}
                         </div>
-                    <div className="text-black ml-80 text-2x1 pixel">
+                    <div className="text-black ml-5 md:ml-80 text-2x1 pixel">
                         <p> SOUND: </p>
                     </div>
                     <button

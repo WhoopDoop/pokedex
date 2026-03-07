@@ -48,22 +48,25 @@ function App() {
   },[pokemon]);
 
   return (
-    <div className="min-h-screen w-screen flex flex-col">
-      <div className="flex items-center justify-start bg-[#ffdcdc] h-[15vh] border-8 border-black p-5 w-full">
-        <img
-         src={PokeBall}
-         width={80}
-         className="md:w-25"
-        />
-        <p className="font-bold text-black flex text-6xl pixel p-8  mr-[35%]"> POKEDEX </p>
-        
-        <input value={input} onChange={(e) => setInput(e.target.value)} type="text" className="pixel  text-black border-black border-3 h-10 w-[20rem] placeholder:text-gray-800 pl-4 placeholder:pixel" placeholder="ENTER A POKEMON"/>
-        <img
-         className="md:pl-3"
-         src={Search}
-         width={53}
-         onClick={() => setSearchTerm(input)}
-        />
+    <div className="min-h-screen w-full md:w-screen flex flex-col">
+      <div className="flex items-center bg-[#ffdcdc] h-[15vh] border-8 border-black p-5 w-[100%] justify-between">
+        <div className="flex items-center">
+          <img
+          src={PokeBall}
+          width={80}
+          className="md:w-25"
+          />
+          <p className="font-bold text-black flex text-3xl md:text-6xl pixel p-8"> POKEDEX </p>
+        </div>
+        <div className="flex items-center">
+          <input value={input} onChange={(e) => setInput(e.target.value)} type="text" className="pixel text-black border-black border-3 h-10 w-[17rem] md:w-[20rem] placeholder:text-gray-800 pl-4 placeholder:pixel" placeholder="ENTER A POKEMON"/>
+          <img
+          className="md:pl-3"
+          src={Search}
+          width={53}
+          onClick={() => setSearchTerm(input)}
+          />
+        </div>
       </div>
       {loading? (
         <div className='flex items-center justify-center h-[85vh]'>
