@@ -69,7 +69,7 @@ function App() {
       </div>
       {loading? (
         <div className='flex items-center justify-center h-[85vh]'>
-        <h1 className='text-amber-950 text-center pixel'> Please Wait </h1>
+        <p className='text-amber-950 text-center md:text-6xl text-2xl pixel'> Please Wait </p>
       </div>
       ): pokemon? (
         <div className='flex  min-h-[85vh]'>
@@ -78,12 +78,12 @@ function App() {
       ):
        searchTerm? (
       <div className='flex items-center justify-center h-[85vh]'>
-        <h1 className='text-amber-950 text-center pixel'> Pokemon not found. </h1>
+        <p className='text-amber-950 md:text-6xl text-2xl text-center pixel'> Pokemon not found. </p>
       </div>
       ):
       (
         <div className='flex items-center justify-center h-[85vh]'>
-        <h1 className='text-amber-950 text-center pixel'> Enter a pokemon's name. </h1>
+        <h1 className='text-amber-950 md:text-6xl text-2xl text-center pixel'> Enter a pokemon's name. </h1>
       </div>
       )
       }
