@@ -27,7 +27,7 @@
         : poke.sprites.front_default;
         return (
             <div className="flex flex-col md:flex-row">
-                <div className="flex flex-col items-center p-4git">
+                <div className="flex flex-col items-center">
                     <img
                     src={sprite}
                     className='w-52 h-52 md:w-80 md:h-80 border-black border-6 m-4' 
@@ -38,7 +38,7 @@
                     <div className='text-amber-950 text-2xl pixel md:text-4xl m-4 flex flex-col'>
                         <p> NAME - {capitalize(poke.name)} </p> 
                     </div>
-                    <div className='text-gray-950 pixel text-xl md:text-2xl m-4 flex gap-30'>
+                    <div className='text-gray-950 pixel text-xl md:text-2xl m-4 flex gap-6 md:gap-30'>
                         <p> Height - {poke.height} </p>
                         <p> Weight - {poke.weight} </p>
                     </div>
@@ -68,13 +68,14 @@
                                 </div> 
                             ))}
                         </div>
-                    <div className="text-black ml-5 md:ml-80 text-2x1 pixel">
+                    <div className="text-black ml-10 mt-4 text-xl pixel">
                         <p> SOUND: </p>
-                    </div>
+
                     <button
                      className="h-20 text-white pixel"
                      onClick={playCry}
                      >CLICK </button>
+                    </div>
                 </div>
                 </div>
             </div>

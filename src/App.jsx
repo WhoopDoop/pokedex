@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="min-h-screen w-full md:w-screen flex flex-col">
-      <div className="flex items-center bg-[#ffdcdc] h-[15vh] border-8 border-black p-5 w-[100%] justify-between">
+      <div className="flex items-center bg-[#ffdcdc] h-[15vh] border-8 border-black p-5 w-full justify-between">
         <div className="flex items-center">
           <img
           src={PokeBall}
